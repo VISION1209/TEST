@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="히브리서 9:11-28 그리스도의 죽으심 - 설교 인포그래픽" />
+  <title>히브리서 9:11-28 | 그리스도의 죽으심</title>
+  <style>
+    :root{
+      --bg:#f7f3ec;
+      --paper:#fffdf9;
+      --ink:#10233f;
+      --muted:#6f6a62;
+      --wine:#8e1832;
+      --wine-dark:#6f1025;
+      --gold:#b8862b;
+      --gold-light:#ead7aa;
+      --blue:#163a6b;
+      --green:#2f6655;
+      --line:#e4dccf;
+      --soft:#f3ede4;
+      --shadow:0 14px 40px rgba(48,36,26,.08);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#f8f5ef 0%,#f3eee5 100%);
+      color:var(--ink);
+      font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+      line-height:1.7;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(255,253,249,.93);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(228,220,207,.85);
+    }
+    .nav{
+      min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .cross-mark{
+      width:28px;height:38px;position:relative;flex:0 0 28px;
+    }
+    .cross-mark:before,.cross-mark:after{
+      content:"";position:absolute;background:var(--gold);border-radius:2px;
+    }
+    .cross-mark:before{width:4px;height:34px;left:12px;top:2px}
+    .cross-mark:after{width:24px;height:4px;left:2px;top:11px}
+    .brand small{display:block;color:var(--muted);font-weight:500;font-size:.78rem;margin-top:-2px}
+    nav ul{display:flex;list-style:none;gap:24px;margin:0;padding:0;font-weight:700;font-size:.95rem}
+    .badge{background:var(--wine);color:white;padding:10px 14px;border-radius:12px;font-weight:800;white-space:nowrap}
+    .hero{
+      position:relative;overflow:hidden;
+      min-height:560px;display:grid;place-items:center;
+      background:
+        radial-gradient(circle at 78% 25%,rgba(255,219,146,.7),transparent 20%),
+        linear-gradient(135deg,#f8efe0 0%,#ecd8b4 55%,#d8b478 100%);
+    }
+    .hero:before{
+      content:"";position:absolute;inset:0;opacity:.24;
+      background-image:
+        linear-gradient(30deg,rgba(83,56,36,.16) 1px,transparent 1px),
+        linear-gradient(150deg,rgba(83,56,36,.08) 1px,transparent 1px);
+      background-size:38px 38px;
+    }
+    .hero-inner{
+      position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:54px;align-items:center;
+      padding:82px 0 74px;
+    }
+    .eyebrow{color:var(--wine);font-weight:900;letter-spacing:.08em;font-size:1.05rem}
+    h1{
+      margin:8px 0 10px;font-family:Georgia,"Noto Serif KR",serif;
+      font-size:clamp(2.9rem,7vw,5.7rem);line-height:1.02;letter-spacing:-.045em;
+    }
+    .hero-sub{
+      font-size:clamp(1.05rem,2.2vw,1.35rem);font-weight:700;max-width:760px;
+      margin:22px 0;color:#24344c;
+    }
+    .hero-note{
+      display:inline-block;margin-top:16px;padding:12px 16px;border:1px solid rgba(142,24,50,.16);
+      border-radius:14px;background:rgba(255,255,255,.62);font-weight:700;
+    }
+    .cross-art{
+      position:relative;height:350px;min-width:260px;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .sun{
+      position:absolute;width:270px;height:270px;border-radius:50%;
+      background:radial-gradient(circle,#fff9dd 0%,rgba(255,233,170,.7) 38%,rgba(255,220,133,0) 72%);
+      filter:blur(.2px);
+    }
+    .cross{
+      position:relative;width:52px;height:250px;background:#5e331e;border-radius:4px;
+      box-shadow:inset -7px 0 0 rgba(0,0,0,.08),0 18px 30px rgba(58,38,25,.18);
+      z-index:2;
+    }
+    .cross:after{
+      content:"";position:absolute;width:180px;height:44px;left:50%;top:68px;transform:translateX(-50%);
+      background:#5e331e;border-radius:4px;box-shadow:inset 0 -6px 0 rgba(0,0,0,.07);
+    }
+    .hill{
+      position:absolute;bottom:10px;width:310px;height:86px;border-radius:50% 50% 0 0/100% 100% 0 0;
+      background:linear-gradient(180deg,#7c6041,#4e3d2f);z-index:1;filter:drop-shadow(0 10px 14px rgba(0,0,0,.15));
+    }
+    main{padding:48px 0 80px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .card{
+      background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:28px;
+    }
+    .section-title{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+    .num{
+      width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+      color:#fff;background:var(--wine);font-weight:900;font-size:1.45rem;flex:0 0 52px;
+    }
+    .num.blue{background:var(--blue)} .num.green{background:var(--green)} .num.gold{background:var(--gold)}
+    h2{font-size:1.8rem;line-height:1.2;margin:0;letter-spacing:-.03em}
+    .muted{color:var(--muted)}
+    .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:stretch;margin:20px 0}
+    .flow-item{
+      border:1px solid var(--line);background:linear-gradient(180deg,#fff,#f8f2e8);
+      border-radius:18px;padding:18px 14px;text-align:center;
+    }
+    .ico{font-size:2.6rem;line-height:1;margin-bottom:12px}
+    .pill{display:inline-block;background:var(--wine);color:#fff;padding:6px 14px;border-radius:999px;font-weight:800}
+    .arrow{align-self:center;font-size:1.8rem;color:var(--gold);font-weight:900}
+    ul.clean{padding-left:1.2rem;margin:15px 0 0}
+    ul.clean li{margin:.4rem 0}
+    .verse{
+      margin-top:18px;border-left:5px solid var(--wine);background:#f8ecec;padding:16px 18px;border-radius:14px;
+      font-family:Georgia,"Noto Serif KR",serif;font-size:1.05rem;font-weight:700;
+    }
+    .reason-list{display:grid;gap:12px;margin-top:18px}
+    .reason{
+      display:grid;grid-template-columns:58px 1fr;gap:14px;align-items:center;
+      padding:14px;border:1px solid var(--line);border-radius:16px;background:#fff;
+    }
+    .reason .r-ico{
+      width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#f4ead9;font-size:1.75rem
+    }
+    .emphasis{
+      margin-top:14px;background:#f7e8e9;color:var(--wine-dark);padding:14px 16px;border-radius:14px;font-weight:900;text-align:center;
+    }
+    .wide{margin-top:22px}
+    .christ-grid{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:18px;align-items:stretch}
+    .stack{display:grid;gap:14px}
+    .mini{
+      border:1px solid #ead8ae;border-radius:18px;padding:18px;background:linear-gradient(180deg,#fffefb,#fbf4e8);
+    }
+    .mini h3{margin:0 0 6px;color:var(--blue);font-size:1.18rem}
+    .center-cross{
+      min-height:300px;border-radius:20px;display:grid;place-items:center;position:relative;overflow:hidden;
+      background:
+        radial-gradient(circle at 50% 45%,rgba(255,242,180,.95),rgba(255,233,159,.3) 32%,transparent 60%),
+        linear-gradient(180deg,#f5e0bd,#d6aa6b 70%,#7f6245 100%);
+    }
+    .center-cross .cross{transform:scale(.72)}
+    .compare{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch}
+    .colbox{border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+    .colbox h3{margin:0;padding:12px 16px;color:#fff;background:#6c7889;text-align:center}
+    .colbox.right h3{background:var(--wine)}
+    .colbox ul{list-style:none;margin:0;padding:10px 18px 16px}
+    .colbox li{padding:9px 0;border-bottom:1px dashed #ddd}
+    .colbox li:last-child{border-bottom:0}
+    .bigarrow{display:grid;place-items:center;color:var(--gold);font-size:2.6rem;font-weight:900}
+    .checks{display:grid;gap:10px;margin-top:10px}
+    .check{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
+    .box{
+      width:24px;height:24px;border-radius:7px;background:var(--gold);color:white;display:grid;place-items:center;font-weight:900
+    }
+    .think{
+      margin-top:18px;background:#f7efe2;border:1px solid #eadac1;padding:16px 18px;border-radius:16px
+    }
+    .footer-verse{
+      margin-top:24px;background:linear-gradient(135deg,var(--wine-dark),#8d2638);color:white;
+      border-radius:22px;padding:24px 28px;text-align:center;box-shadow:var(--shadow)
+    }
+    .footer-verse strong{font-family:Georgia,"Noto Serif KR",serif;font-size:1.25rem}
+    footer{padding:30px 0 44px;color:#746d65;text-align:center;font-size:.9rem}
+    @media (max-width:920px){
+      nav ul{display:none}
+      .hero-inner{grid-template-columns:1fr;gap:16px;text-align:center}
+      .hero-sub{margin-left:auto;margin-right:auto}
+      .cross-art{height:260px}
+      .cross{height:210px}.cross:after{top:58px;width:150px}
+      .grid-2,.christ-grid{grid-template-columns:1fr}
+      .flow{grid-template-columns:1fr}
+      .arrow{transform:rotate(90deg)}
+      .compare{grid-template-columns:1fr}
+      .bigarrow{transform:rotate(90deg)}
+    }
+    @media (max-width:600px){
+      .wrap{padding:0 14px}
+      .badge{display:none}
+      .card{padding:20px}
+      h2{font-size:1.5rem}
+      .hero-inner{padding:56px 0 52px}
+      .cross-art{height:220px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="cross-mark" aria-hidden="true"></span>
+      <div>
+        히브리서 말씀 시리즈
+        <small>더 좋은 언약, 영원한 구원</small>
+      </div>
+    </div>
+    <nav aria-label="주요 메뉴">
+      <ul>
+        <li><a href="#summary">말씀 요약</a></li>
+        <li><a href="#christ">그리스도의 사역</a></li>
+        <li><a href="#message">핵심 메시지</a></li>
+        <li><a href="#apply">오늘의 적용</a></li>
+      </ul>
+    </nav>
+    <div class="badge">히브리서 9:11–28</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow">HEBREWS 9:11–28</div>
+      <h1>그리스도의 죽으심</h1>
+      <p class="hero-sub">
+        왜 예수 그리스도는 대제사장일 뿐 아니라,
+        자기 피를 흘리신 제물이 되셔야 했는가?
+      </p>
+      <div class="hero-note">불완전한 제사를 끝내시고, 완전한 구원의 길을 여신 예수 그리스도</div>
+    </div>
+    <div class="cross-art" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="cross"></div>
+      <div class="hill"></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap" id="summary">
+  <div class="grid-2">
+
+    <section class="card">
+      <div class="section-title">
+        <span class="num">1</span>
+        <div>
+          <h2>옛 제사의 구조</h2>
+          <div class="muted">율법 아래 예표로 주어진 제사 제도</div>
+        </div>
+      </div>
+
+      <div class="flow">
+        <div class="flow-item">
+          <div class="ico">⛺</div>
+          <div class="pill">성막</div>
+          <p>하나님이 거하시는 공간</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="flow-item">
+          <div class="ico">🕊️</div>
+          <div class="pill">대제사장</div>
+          <p>1년에 한 번 지성소에 들어감</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="flow-item">
+          <div class="ico">🐑</div>
+          <div class="pill">희생제물</div>
+          <p>죄를 위하여 흘리는 피</p>
+        </div>
+      </div>
+
+      <ul class="clean">
+        <li>대제사장은 대속죄일에 1년에 한 번 지성소에 들어갔습니다.</li>
+        <li>죄 사함에는 반드시 피 흘림이 있었습니다.</li>
+        <li>그러나 그 피는 반복적으로 드려져야 했습니다.</li>
+      </ul>
+
+      <div class="verse">히 9:22 — “피흘림이 없은즉 사함이 없느니라”</div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">
+        <span class="num">2</span>
+        <div>
+          <h2>왜 반복되어야 했는가?</h2>
+          <div class="muted">좋은 것들의 그림자일 뿐, 참 형상이 아니었기 때문입니다.</div>
+        </div>
+      </div>
+
+      <div class="reason-list">
+        <div class="reason">
+          <div class="r-ico">⛺</div>
+          <div><strong>성막, 대제사장, 제물</strong>은 모두 필요했지만 불완전했습니다.</div>
+        </div>
+        <div class="reason">
+          <div class="r-ico">👤</div>
+          <div>인간과 창조세계는 하나님의 완전함과 달리 <strong>한계</strong>를 지닙니다.</div>
+        </div>
+        <div class="reason">
+          <div class="r-ico">🩸</div>
+          <div>제사는 죄를 덮었지만, <strong>영원히 깨끗하게 하지는 못했습니다.</strong></div>
+        </div>
+      </div>
+
+      <div class="emphasis">불완전한 제사는 계속 반복될 수밖에 없었습니다.</div>
+    </section>
+  </div>
+
+  <section class="card wide" id="christ">
+    <div class="section-title">
+      <span class="num blue">3</span>
+      <div>
+        <h2>예수 그리스도의 완전한 사역</h2>
+        <div class="muted">참 성막, 참 대제사장, 참 제물 — 단번에 이루신 영원한 속죄</div>
+      </div>
+    </div>
+
+    <div class="christ-grid">
+      <div class="stack">
+        <div class="mini">
+          <h3>🏛️ 참 성막</h3>
+          <div>손으로 짓지 아니한 온전한 장막, 곧 하늘에 있는 참 성막</div>
+        </div>
+        <div class="mini">
+          <h3>👑 참 대제사장</h3>
+          <div>인간 혈통을 넘어선 영원한 대제사장</div>
+        </div>
+      </div>
+
+      <div class="center-cross" aria-label="십자가 상징">
+        <div class="cross"></div>
+      </div>
+
+      <div class="stack">
+        <div class="mini">
+          <h3>🐑 참 제물</h3>
+          <div>흠 없는 자기 자신을 하나님께 드리심</div>
+        </div>
+        <div class="mini">
+          <h3>🩸 단번의 속죄</h3>
+          <div>반복이 아닌 영원한 구속을 이루심</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="verse">
+      히 9:14 — “그리스도의 피가 어찌 너희 양심을 죽은 행실에서 깨끗하게 하고
+      살아 계신 하나님을 섬기게 하지 못하겠느냐”
+    </div>
+  </section>
+
+  <div class="grid-2 wide">
+    <section class="card" id="message">
+      <div class="section-title">
+        <span class="num green">4</span>
+        <div>
+          <h2>핵심 메시지</h2>
+          <div class="muted">예수 그리스도 안에서 모든 것이 완전하게 이루어졌습니다.</div>
+        </div>
+      </div>
+
+      <div class="compare">
+        <div class="colbox">
+          <h3>이전 — 율법 아래</h3>
+          <ul>
+            <li>↻ 반복되는 제사</li>
+            <li>🐂 동물의 피</li>
+            <li>⌛ 일시적인 정결</li>
+            <li>👁 눈에 보이는 제사</li>
+          </ul>
+        </div>
+        <div class="bigarrow">→</div>
+        <div class="colbox right">
+          <h3>예수 그리스도 안에서</h3>
+          <ul>
+            <li>👑 단번의 제사</li>
+            <li>🩸 자기의 피</li>
+            <li>∞ 영원한 속죄</li>
+            <li>♥ 믿음으로 받는 은혜</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="emphasis">
+        예수님은 성막의 문제, 대제사장의 문제, 제물의 문제를 모두 완전하게 이루셨습니다.
+      </div>
+    </section>
+
+    <section class="card" id="apply">
+      <div class="section-title">
+        <span class="num gold">5</span>
+        <div>
+          <h2>오늘 우리의 적용</h2>
+          <div class="muted">이 은혜 안에서 어떻게 살아갈 것인가?</div>
+        </div>
+      </div>
+
+      <div class="checks">
+        <div class="check"><span class="box">✓</span><div>구원은 헌금, 봉사, 기도량으로 얻는 보상이 아닙니다.</div></div>
+        <div class="check"><span class="box">✓</span><div>구원은 예수 그리스도를 믿음으로 받는 은혜의 선물입니다.</div></div>
+        <div class="check"><span class="box">✓</span><div>우리는 십자가의 공로를 신뢰하며 살아가야 합니다.</div></div>
+        <div class="check"><span class="box">✓</span><div>받은 은혜는 섬김과 복음 전함으로 나타나야 합니다.</div></div>
+      </div>
+
+      <div class="think">
+        <strong>함께 생각해 봅시다.</strong><br>
+        ① 나는 행위가 아니라 그리스도의 은혜 위에 서 있는가?<br>
+        ② 나는 매일 그분의 십자가를 기억하며 살아가는가?
+      </div>
+    </section>
+  </div>
+
+  <section class="footer-verse">
+    <strong>히 9:28 — “그리스도도 많은 사람의 죄를 담당하시려고 단번에 드리신 바 되셨고”</strong>
+    <div style="margin-top:8px;opacity:.85">불완전한 제사를 끝내시고, 완전한 구원의 길을 여신 예수 그리스도</div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Hebrews 9:11–28 · Sermon Infographic</div>
+</footer>
+
+</body>
+</html>
